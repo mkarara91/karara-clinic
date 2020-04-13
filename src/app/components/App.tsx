@@ -5,7 +5,7 @@ class App extends React.PureComponent {
     render() {
         return (
             <div className={styles.app}>
-                <h1 className={styles.title}>Hello World!</h1>
+                <h1 className={styles.title}>Prof. Dr. Khaled Karara</h1>
             </div>
         );
     }
