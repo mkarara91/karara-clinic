@@ -1,35 +1,19 @@
 {
+  "compileOnSave": true,
   "compilerOptions": {
-    "jsx": "react",
-    "outDir": "./dist/",
-    "preserveConstEnums": true,
-    "sourceMap": true,
-    "target": "esnext",
-    "strictNullChecks": true,
-    "moduleResolution": "node",
+    "target": "es6",
+    "module": "commonjs",
     "allowJs": true,
-    "noEmit": true,
+    "jsx": "react",
+    "outDir": "./dist",
+    "rootDir": "./",
+    "isolatedModules": true,
     "strict": true,
-    "esModuleInterop": true,
+    "moduleResolution": "node",
     "baseUrl": "./src",
-    "lib": [
-      "es2015",
-      "dom.iterable",
-      "es2016.array.include",
-      "es2017.object",
-      "dom"
-    ],
-    "module": "es6",
-    "removeComments": true,
-    "alwaysStrict": true,
-    "allowUnreachableCode": false,
-    "noImplicitAny": true,
-    "noImplicitThis": true,
-    "noUnusedLocals": true,
-    "noUnusedParameters": true,
-    "noImplicitReturns": true,
-    "noFallthroughCasesInSwitch": true,
-    "forceConsistentCasingInFileNames": true,
-    "importHelpers": true
-  }
+    "typeRoots": ["node_modules/@types", "src/typings"],
+    "esModuleInterop": true
+  },
+  "include": ["src/**/*"],
+  "exclude": ["node_modules"]
 }
