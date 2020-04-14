@@ -1,0 +1,10 @@
+.headerMenu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width:35%;
+
+  .headerMenuItem {
+    flex: 1;
+  }
+}

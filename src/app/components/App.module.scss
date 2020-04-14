@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css?family=Mirza&display=swap');
+
+$mirza: 'Mirza', cursive;
+
+.app {
+  font-family: $mirza;
+  display: flex;
+  flex-direction: column;
+  margin-right: 4em;
+  margin-left: 4em;
+
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+}
