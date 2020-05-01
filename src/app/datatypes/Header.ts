@@ -1,5 +1,6 @@
 export interface HeaderItem {
     text: string,
     active: boolean,
-    id: string
+    id: string,
+    to: string
 }

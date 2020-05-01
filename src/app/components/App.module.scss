@@ -2,6 +2,11 @@
 
 $mirza: 'Mirza', cursive;
 
+html {
+  background: linear-gradient(180deg, rgba(226, 223, 222, 1) 56%, rgba(227, 224, 224, 0.9724264705882353) 78%, rgba(255, 255, 255, 1) 98%) no-repeat;
+  height: 100%;
+}
+
 .app {
   font-family: $mirza;
   display: flex;

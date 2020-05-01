@@ -7,17 +7,26 @@ const items: HeaderItem[] = [
 	{
 		text: "الرئيسية",
 		active: true,
-		id: "home"
+		id: "home",
+        to: "/"
 	},
+    {
+        text: "سيرة ذاتية",
+        active: true,
+        id: "about",
+        to: "/about"
+    },
 	{
 		text: "ساعات العمل",
 		active: true,
-		id: "opening-time"
+		id: "opening-time",
+        to: "/workingHours"
 	},
 	{
 		text: "محاضرات",
 		active: true,
-		id: "lectures"
+		id: "lectures",
+        to: "/lectures"
 	}];
 
 class HeaderMenu extends React.Component {
@@ -25,7 +34,7 @@ class HeaderMenu extends React.Component {
 	render() {
 		return (
 			<div className={style.headerMenu}>
-				{items.map((item, key) => <HeaderMenuItem  item={item} key={key}/>)}
+				{items.map((item, key) => <HeaderMenuItem  item={item} key={key} to={item.to}/>)}
 			</div>
 		);
 	}
