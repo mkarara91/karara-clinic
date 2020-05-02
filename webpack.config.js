@@ -5,11 +5,15 @@ module.exports = {
   entry: './src/index.tsx',
   output: {
     path: path.join(__dirname, '/dist'),
-    filename: 'bundle.js'
+    filename: 'bundle.js',
+    publicPath: "/"
   },
   devtool: 'source-map',
   resolve: {
     extensions: ['.js', '.jsx', '.json', '.ts', '.tsx', ".css", ".scss"]
+  },
+  devServer: {
+    historyApiFallback:true
   },
   module: {
     rules: [
@@ -36,6 +40,7 @@ module.exports = {
           'sass-loader'
         ]
       },
+      {test: /\.(jpe?g|gif|png|svg)$/, loader: "file-loader?name=./images/[name].[ext]"},
       { enforce: "pre", test: /\.js$/, loader: "source-map-loader" }
     ]
   },

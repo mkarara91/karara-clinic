@@ -1,11 +1,24 @@
+@import "../../../styles/configs";
+
 .headerMenu {
   direction: rtl;
   display: flex;
   flex-direction: row;
+  align-items: stretch;
   justify-content: space-between;
   width:35%;
 
   .headerMenuItem {
     flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: $main-font-color-grey;
+    border-bottom: 4px solid transparent;
+  }
+
+  .headerMenuItem:hover {
+    border-bottom: 4px solid rgba(136, 15, 23, 0.8);
   }
 }

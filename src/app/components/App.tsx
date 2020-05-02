@@ -8,7 +8,7 @@ import {
 import styles from './App.module.scss';
 import HeaderMenu from "./Header/HeaderMenu";
 import Logo from "./Header/Logo";
-import AboutPage from "./AboutPage";
+import AboutPage from "./about/AboutPage";
 import WorkingHoursPage from "./WorkingHoursPage";
 
 const routes = [
@@ -36,7 +36,7 @@ class App extends React.PureComponent {
                         <Logo/>
                         <HeaderMenu />
                     </div>
-                    <div>
+                    <div className={styles.mainContent}>
                         <Switch>
                             {routes.map((route, index) => (
                                 // You can render a <Route> in as many places

@@ -1,0 +1,54 @@
+.aboutPage {
+  width: 100%;
+
+  .aboutRow {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .businessCard {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    min-width: 40%;
+
+    .profilePicture {
+
+    }
+
+    .businessDetails {
+      max-width: 300px;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+
+      span {
+        font-size: 16px;
+        font-weight: lighter;
+        margin-bottom: 10px;
+      }
+    }
+  }
+
+  .practiceAreas {
+    min-width: 40%;
+
+    .mainPracticeAreas {
+
+    }
+  }
+
+  .background {
+    display: flex;
+    width:100%;
+    
+    .main {
+      width: 60%;
+    }
+
+    .other {
+      width: 40%;
+    }
+  }
+}
