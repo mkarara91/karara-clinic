@@ -15,8 +15,6 @@ li {
   font-family: $mirza;
   display: flex;
   flex-direction: column;
-  margin-right: 4em;
-  margin-left: 4em;
   align-items: center;
   font-size: 20px;
   color: $main-font-color-grey;
@@ -27,11 +25,20 @@ li {
     justify-content: space-between;
     flex-wrap: wrap;
     width: 100%;
+    padding-left: 4em;
+    padding-right: 4em;
   }
 
   .mainContent {
     max-width: $main-fixed-width;
     width: 100%;
     display: flex;
+  }
+}
+
+@media screen and (min-width: 500px) {
+  .mainContent{
+    margin-right: 4em;
+    margin-left: 4em;
   }
 }

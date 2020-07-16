@@ -34,7 +34,16 @@ class HeaderMenu extends React.Component {
 	render() {
 		return (
 			<div className={style.headerMenu}>
-				{items.map((item, key) => <HeaderMenuItem  item={item} key={key} to={item.to}/>)}
+
+				<input type="checkbox" />
+
+				<span></span>
+				<span></span>
+				<span></span>
+
+				<ul className={style.menu}>
+					{items.map((item, key) => <HeaderMenuItem  item={item} key={key} to={item.to}/>)}
+				</ul>
 			</div>
 		);
 	}

@@ -12,7 +12,7 @@ interface Prop {
 const HeaderMenuItem = (props: Prop) => {
     return (
         <Link to={props.to} id={props.item.id} className={style.headerMenuItem}>
-            {props.item.text}
+            <li>{props.item.text}</li>
         </Link>
     )
 };
